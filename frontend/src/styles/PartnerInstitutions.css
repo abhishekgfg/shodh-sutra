@@ -1,0 +1,52 @@
+.container {
+  
+ 
+  padding: 40px;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #13334C;
+  
+}
+
+.description {
+  color: #64748b;
+  margin-bottom: 24px;
+}
+
+.institutions {
+  display: flex;
+  justify-content: flex-start; /* align cards to the left */
+  gap: 0; /* no space between cards */
+}
+
+.institution-card {
+  flex: 0 0 33.33%; /* take roughly one-third of the container */
+  border: 4px solid #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  margin: 0;
+}
+
+
+.institution-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.institution-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #13334C;
+  padding: 10px;
+  margin: 0;
+}

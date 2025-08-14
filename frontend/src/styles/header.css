@@ -1,0 +1,135 @@
+/* Top Bar */
+.top-bar {
+  background-color: #fcbf1e;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 50px;
+  font-size: 14px;
+  color: #000;
+}
+
+.contact-info span {
+  margin-right: 20px;
+}
+
+.top-links {
+  display: flex;
+  align-items: center;
+}
+
+.top-links a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.social-icon {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Main Header */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.logo img {
+  height: 40px;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.apply-btn {
+  padding: 10px 20px;
+  border: 2px solid #000;
+  background-color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.apply-btn:hover {
+  background-color: #fcbf1e;
+}
+
+/* Menu Icon */
+.menu-icon {
+  display: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  /* Hide top bar on mobile */
+  .top-bar {
+    display: none;
+  }
+
+  .header {
+    padding: 10px 20px;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  /* Show hamburger icon on left */
+  .menu-icon {
+    display: block;
+    order: 1;
+  }
+
+  /* Logo in center */
+  .logo {
+    order: 2;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* Apply Now on right */
+  .apply-btn {
+    order: 3;
+    font-size: 12px;
+    padding: 8px 15px;
+  }
+
+  /* Nav menu styles for mobile */
+  .nav {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    padding: 20px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .nav a {
+    margin: 10px 0;
+  }
+}

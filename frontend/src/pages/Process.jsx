@@ -3,6 +3,7 @@ import "../styles/Process.css";
 import aboutBg from "../images/process.jpg";
 import scrollImg from "../images/graduating cap and diploma certificate.jpg";
 import RequirementsSection from "./RequirementsSection";
+import PhDConsultation from "../home/PhDConsultation";
 
 function Process() {
     const steps = [
@@ -101,6 +102,7 @@ function Process() {
       </div>
     </section>
     <RequirementsSection />
+    <PhDConsultation />
     </>
   );
 }

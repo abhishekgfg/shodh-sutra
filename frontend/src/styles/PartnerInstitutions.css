@@ -1,6 +1,4 @@
 .container {
-  
- 
   padding: 40px;
 }
 
@@ -13,7 +11,6 @@
   font-size: 24px;
   font-weight: bold;
   color: #13334C;
-  
 }
 
 .description {
@@ -23,19 +20,18 @@
 
 .institutions {
   display: flex;
-  justify-content: flex-start; /* align cards to the left */
-  gap: 0; /* no space between cards */
+  justify-content: flex-start;
+  gap: 0;
 }
 
 .institution-card {
-  flex: 0 0 33.33%; /* take roughly one-third of the container */
+  flex: 0 0 33.33%;
   border: 4px solid #ffffff;
   border-radius: 8px;
   overflow: hidden;
   text-align: center;
   margin: 0;
 }
-
 
 .institution-image {
   width: 100%;
@@ -49,4 +45,30 @@
   color: #13334C;
   padding: 10px;
   margin: 0;
+}
+
+/* ---- MOBILE RESPONSIVE ---- */
+@media (max-width: 768px) {
+  .institutions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .institution-card {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .institution-image {
+    height: 200px; /* smaller height for mobile */
+    width: 300px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .institution-name {
+    font-size: 16px;
+  }
 }

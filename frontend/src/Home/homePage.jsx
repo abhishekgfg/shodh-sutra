@@ -7,6 +7,7 @@ import HowWork from './HowWork';
 import PartnerInstitutions from './PartnerInstitutions';
 import Testimonial from './Testimonial';
 import Resources from './Resources';
+import PhDConsultation from './PhDConsultation';
 
 
 
@@ -23,6 +24,7 @@ function HomePage() {
        <PartnerInstitutions />
        <Testimonial />
        <Resources />
+       < PhDConsultation />
        
      
     </div>

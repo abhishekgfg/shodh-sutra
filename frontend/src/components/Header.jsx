@@ -1,6 +1,13 @@
 import React, { useState } from "react";
 import "../styles/Header.css";
-import { FaFacebookF, FaLinkedinIn, FaPhoneAlt, FaEnvelope, FaBars, FaTimes } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaLinkedinIn,
+  FaPhoneAlt,
+  FaEnvelope,
+  FaBars,
+  FaTimes,
+} from "react-icons/fa";
 import sodhLogo from "../images/sodh.png";
 
 const Header = () => {
@@ -40,9 +47,25 @@ const Header = () => {
         </div>
 
         {/* Navigation */}
-        <nav className={`nav ${menuOpen ? "open" : ""}`}>
-          <a href="#">Home</a>
-          <a href="#">About Us</a>
+      <nav className={`nav ${menuOpen ? "open" : ""}`}>
+  {/* Close button inside menu */}
+  <div className="close-btn" onClick={() => setMenuOpen(false)}>
+    <FaTimes />
+  </div>
+          <a href="/">Home</a>
+
+          {/* Dropdown Menu */}
+          <div className="dropdown">
+            <a href="#">About Us ▽</a>
+            <div className="dropdown-menu">
+            
+  <a href="/about" className="about-link">Meet ShodhSutra</a>
+
+
+              <a href="/whyprusuie">Why Pursue a PhD?</a>
+            </div>
+          </div>
+
           <a href="#">Process</a>
           <a href="#">Disciplines</a>
           <a href="#">Guides</a>

@@ -66,7 +66,7 @@ const Header = () => {
             </div>
           </div>
 
-          <a href="#">Process</a>
+          <a href="/process">Process</a>
           <a href="#">Disciplines</a>
           <a href="#">Guides</a>
           <a href="#">Contact Us</a>

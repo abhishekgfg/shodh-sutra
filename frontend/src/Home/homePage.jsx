@@ -15,7 +15,7 @@ import PhDConsultation from './PhDConsultation';
 function HomePage() {
   return (
     <div>
-     
+     //updated
       <HeroSection /> {/* 🆕 Add video hero section below header */}
        <AboutSodhSutra />
        <Disciplines />

@@ -67,9 +67,9 @@ const Header = () => {
           </div>
 
           <a href="/process">Process</a>
-          <a href="#">Disciplines</a>
+          <a href="/discipline">Disciplines</a>
           <a href="#">Guides</a>
-          <a href="#">Contact Us</a>
+          <a href="/contact">Contact Us</a>
         </nav>
 
         {/* Apply Now Button */}

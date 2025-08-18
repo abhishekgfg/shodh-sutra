@@ -8,6 +8,8 @@ import "./App.css";
 import AboutUs from './about/AboutUs';
 import WhyPursuie from './about/WhyPursuie';
 import Process from './pages/Process';
+import Discipline from './pages/Discipline';
+import ContactUs from './pages/ContactUs';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <Route path="/about" element={<AboutUs />} />
           <Route path="/whyprusuie" element={<WhyPursuie />} />
           <Route path="/process" element={<Process />}  />
+          <Route path="/discipline" element={<Discipline />}  />
+          <Route path="/contact" element={<ContactUs/>} />
       </Routes>
       <Footer />
     </Router>

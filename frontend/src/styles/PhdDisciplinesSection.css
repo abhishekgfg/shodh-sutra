@@ -1,0 +1,148 @@
+.disciplines-section {
+  padding: 80px 80px;
+  background: #fff;
+   margin-bottom: -80px;
+}
+
+.disciplines-container {
+
+    
+  text-align: center;
+}
+
+.disciplines-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #0a2540;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.disciplines-subtitle {
+  color: #555;
+ 
+  margin: 0 auto 40px;
+  text-align: left;
+}
+
+.disciplines-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.discipline-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 25px;
+  text-align: left;
+  background: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.discipline-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.discipline-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+.choose-discipline {
+  padding: 80px 80px;
+  background: #fff;
+}
+
+.choose-container {
+
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.choose-left {
+  flex: 1;
+}
+
+.choose-title {
+    margin-top: -50px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #0a2540;
+  margin-bottom: 15px;
+}
+
+.choose-subtitle {
+  color: #555;
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+.choose-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.choose-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  text-align: left;
+}
+
+.choose-item h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0a2540;
+  margin-bottom: 5px;
+}
+
+.choose-item p {
+  font-size: 14px;
+  color: #555;
+}
+
+.choose-icon {
+  font-size: 20px;
+  color: #007bff;
+  min-width: 30px;
+}
+
+.choose-right img {
+  max-width: 380px;
+  width: 90%;
+  height: auto;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .choose-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .choose-left {
+    order: 2;
+  }
+  .choose-right {
+    order: 1;
+  }
+  .choose-item {
+    justify-content: center;
+    text-align: left;
+  }
+}

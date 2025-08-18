@@ -48,8 +48,8 @@ function Process() {
         <div className="process-overlay">
           <p className="process-small-title">Meet ShodhSutra</p>
           <h1>
-            About SodhSutra – Your Gateway to
-            <br /> Doctoral Excellence
+           PhD Admission Process – Step-by-Step 
+            <br /> Guide to Your Research Journey
           </h1>
           <p className="process-description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -65,7 +65,7 @@ function Process() {
       <section className="process-about-container">
         <div className="process-about-top">
           <div className="process-about-text">
-            <h2>PhD: A Journey Beyond Degrees</h2>
+            <h2>Simplifying Your PhD Admission Journey</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua...

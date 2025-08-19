@@ -3,14 +3,14 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import HomePage from './home/HomePage';
+import HomePage from './Home/homepage.jsx';
 import "./App.css";
 import AboutUs from './about/AboutUs';
 import WhyPursuie from './about/WhyPursuie';
 import Process from './pages/Process';
 import Discipline from './pages/Discipline';
 import ContactUs from './pages/ContactUs';
-import PhDConsultation from './home/PhDConsultation';
+import PhDConsultation from './Home/PhDConsultation.jsx';
 import Guide from './pages/Guide';
 
 function App() {

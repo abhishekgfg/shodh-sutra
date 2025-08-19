@@ -3,7 +3,7 @@ import "../styles/Process.css";
 import aboutBg from "../images/discipline.jpg";
 import scrollImg from "../images/graduating cap and diploma certificate.jpg";
 import "../styles/PhdDisciplinesSection.css";
-import Testimonial from "../home/Testimonial";
+import Testimonial from "../Home/Testimonial";
 
 
 import engIcon from "../images/Discipline/engineering (1) 1.png";
@@ -13,7 +13,7 @@ import lawIcon from "../images/Discipline/compliant 1.png";
 import socialIcon from "../images/Discipline/social-science 1.png";
 import scienceIcon from "../images/Discipline/sketch 1.png";
 import graduateImg from "../images/Discipline/graduated student showing her diploma.png";
-import PhDConsultation from "../home/PhDConsultation";
+import PhDConsultation from "../Home/PhDConsultation";
 
 function Discipline() {
     const points = [

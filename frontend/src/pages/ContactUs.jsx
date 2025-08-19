@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/Process.css";
 import aboutBg from "../images/contact.png";
 import scrollImg from "../images/graduating cap and diploma certificate.jpg";
-import PhDConsultation from "../home/PhDConsultation";
+import PhDConsultation from "../Home/PhDConsultation";
 import "../styles/ContactSection.css";
 
 

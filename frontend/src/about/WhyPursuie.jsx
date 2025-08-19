@@ -8,8 +8,8 @@ import iconIntellectual from "../images/light-bulb 1.png";
 import iconGlobal from "../images/globe 1.png";
 import PhDCheck from "./PhDCheck";
 import CareerPaths from "./CareerPaths";
-import Testimonial from "../home/Testimonial";
-import PhDConsultation from "../home/PhDConsultation";
+import Testimonial from "../Home/Testimonial";
+import PhDConsultation from "../Home/PhDConsultation";
 
 
 function WhyPursuie() {

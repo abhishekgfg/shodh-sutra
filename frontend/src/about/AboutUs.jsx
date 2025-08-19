@@ -6,8 +6,8 @@ import centerIcon from "../images/mortarboard 4.png"; // Center icon in bottom r
 import scholarIcon from "../images/graduating-student 1.png";
 import phdIcon from "../images/contract 2.png";
 import mentorshipIcon from "../images/consultant 2.png";
-import WhySodhSutra from "../home/WhySodhSutra";
-import PhDConsultation from "../home/PhDConsultation";
+import WhySodhSutra from "../Home/WhySodhSutra";
+import PhDConsultation from "../Home/PhDConsultation";
 
 function AboutUs() {
   return (

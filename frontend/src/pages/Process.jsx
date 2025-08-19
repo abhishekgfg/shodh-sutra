@@ -3,7 +3,7 @@ import "../styles/Process.css";
 import aboutBg from "../images/process.jpg";
 import scrollImg from "../images/graduating cap and diploma certificate.jpg";
 import RequirementsSection from "./RequirementsSection";
-import PhDConsultation from "../home/PhDConsultation";
+import PhDConsultation from "../Home/PhDConsultation";
 
 function Process() {
     const steps = [

@@ -4,7 +4,7 @@ import aboutBg from "../images/process.jpg";
 import scrollImg from "../images/graduated student with diploma.jpg";
 import { FaFileAlt, FaPenFancy, FaUserFriends, FaBookOpen, FaComments, FaGraduationCap, FaClipboardCheck, FaTasks } from "react-icons/fa";
 import "../styles/Guides.css";
-import PhDConsultation from "../home/PhDConsultation";
+import PhDConsultation from "../Home/PhDConsultation";
 
 function Guide() {
   const guides = [

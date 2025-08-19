@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import HomePage from './Home/homepage.jsx';
+import HomePage from './Home/HomePage.jsx';
 import "./App.css";
 import AboutUs from './about/AboutUs';
 import WhyPursuie from './about/WhyPursuie';

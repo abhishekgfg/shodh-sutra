@@ -1,13 +1,26 @@
 /* Top Bar */
+
+.header-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 1200;
+}
+
+/* Top Bar (scrolls normally) */
 .top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   background-color: #fcbf1e;
   display: flex;
   justify-content: space-between;
   padding: 8px 50px;
   font-size: 14px;
   color: #090909;
+  z-index: 1300; /* above header */
+  height: 40px;  /* fix height */
 }
-
 .contact-info span {
   margin-right: 20px;
 }
@@ -28,20 +41,98 @@
   margin-left: 10px;
   cursor: pointer;
 }
-
-/* Main Header */
+/* Sticky header with shadow */
 .header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  position: fixed;
+  top: 40px; /* same as .top-bar height */
+  left: 0;
+  width: 100%;
+  z-index: 1200;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 50px;
   background-color: #fff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
 }
 
+/* Push content down so it doesn't hide under top-bar + header */
+
+/* Mobile Slide-in Sidebar */
+.nav {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+/* ✅ Nav sidebar (mobile) */
+.nav {
+  position: fixed;
+  top: 0;
+  right: -100%; /* pehle hidden */
+  width: 250px;
+  height: 100vh;
+  background: white;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  transition: right 0.4s ease-in-out; /* smooth slide */
+  z-index: 999;
+}
+
+.nav.open {
+  right: 0; /* open hone par dikh jaye */
+}
+
+
+  .nav a {
+    margin: 18px 0;
+    font-size: 16px;
+    color: #111;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .nav a:hover {
+    color: #fcbf1e;
+  }
+
+  /* Dropdown inside mobile */
+  .dropdown-menu {
+    position: static;
+    background: transparent;
+    box-shadow: none;
+    padding-left: 15px;
+  }
+}
+
+/* Close Button */
+.close-btn {
+  display: none;
+}
+@media (max-width: 768px) {
+.close-btn {
+  align-self: flex-end;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+/* Overlay behind sidebar */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 998;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: -0; }
+  to { opacity: 1; }
+}
+}
 .logo img {
   height: 40px;
 }
@@ -215,5 +306,16 @@
   .close-btn {
     display: block;
     color: #000;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    top: 0;              /* No top-bar, so stick to very top */
+    position: fixed;     /* keep it fixed */
+    padding: 10px 20px;
+  }
+
+  body {
+    padding-top: 70px;   /* adjust based on mobile header height */
   }
 }

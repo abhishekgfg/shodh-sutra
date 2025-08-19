@@ -129,6 +129,7 @@ function Discipline() {
           </div>
         </div>
       </section>
+      
        <section className="disciplines-section">
       <div className="disciplines-container">
         <h2 className="disciplines-title">Explore PhD Disciplines</h2>

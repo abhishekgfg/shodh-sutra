@@ -16,6 +16,7 @@ const Header = () => {
   return (
     <div>
       {/* Top Bar */}
+      <div className="header-wrapper">
       <div className="top-bar">
         <div className="contact-info">
           <span>
@@ -37,8 +38,8 @@ const Header = () => {
       {/* Main Header */}
       <header className="header">
         {/* Mobile Menu Icon */}
-        <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
-          {menuOpen ? <FaTimes /> : <FaBars />}
+        <div className="menu-icon" onClick={() => setMenuOpen(true)}>
+          <FaBars />
         </div>
 
         {/* Logo */}
@@ -47,34 +48,38 @@ const Header = () => {
         </div>
 
         {/* Navigation */}
-      <nav className={`nav ${menuOpen ? "open" : ""}`}>
-  {/* Close button inside menu */}
-  <div className="close-btn" onClick={() => setMenuOpen(false)}>
-    <FaTimes />
-  </div>
+        <nav className={`nav ${menuOpen ? "open" : ""}`}>
+          <div className="close-btn" onClick={() => setMenuOpen(false)}>
+            <FaTimes />
+          </div>
           <a href="/">Home</a>
 
-          {/* Dropdown Menu */}
           <div className="dropdown">
             <a href="#">About Us ▽</a>
             <div className="dropdown-menu">
-            
-  <a href="/about" className="about-link">Meet ShodhSutra</a>
-
-
+              <a href="/about">Meet ShodhSutra</a>
               <a href="/whyprusuie">Why Pursue a PhD?</a>
             </div>
           </div>
 
           <a href="/process">Process</a>
           <a href="/discipline">Disciplines</a>
-          <a href="#">Guides</a>
+          <a href="/guide">Guides</a>
           <a href="/contact">Contact Us</a>
         </nav>
 
         {/* Apply Now Button */}
-        <button className="apply-btn">Apply Now</button>
+        <button
+          className="apply-btn"
+          onClick={() => (window.location.href = "/consultation")}
+        >
+          Apply Now
+        </button>
       </header>
+      </div>
+
+      {/* Dark Overlay */}
+      {menuOpen && <div className="overlay" onClick={() => setMenuOpen(false)} />}
     </div>
   );
 };

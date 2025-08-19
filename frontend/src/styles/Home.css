@@ -5,17 +5,15 @@
   background-position: center;
   border-radius: 20px;
   overflow: hidden;
-  min-height: 500px;
-  padding: 60px; /* equal padding on all sides */
+  min-height: 600px; /* desktop default */
+  padding: 60px;
   color: white;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  margin: 140px 20px 20px; /* desktop me margin-top 140px */
 }
 
 .hero::before {
@@ -42,7 +40,7 @@
 }
 
 .hero h1 {
-  font-size: 2.3rem;
+  font-size: 2.8rem; /* desktop ka size same */
   font-weight: 800;
   margin-bottom: 15px;
   line-height: 1.3;
@@ -53,7 +51,7 @@
 }
 
 .desc {
-  font-size: 0.95rem;
+  font-size: 1.1rem; /* desktop same */
   line-height: 1.5;
   margin-bottom: 35px;
   color: #dcdcdc;
@@ -67,9 +65,9 @@
   padding: 8px 8px;
   border-radius: 50px;
   overflow: hidden;
-  margin: 0 auto 20px auto; /* center horizontally and add bottom space */
-  width: 60%; /* adjust as needed, e.g., 50% or 400px */
-  max-width: 500px; /* prevents it from getting too wide on big screens */
+  margin: 0 auto 20px auto;
+  width: 60%; /* desktop same */
+  max-width: 500px;
 }
 
 .search-icon {
@@ -97,4 +95,52 @@
   font-weight: 600;
   font-size: 14px;
   white-space: nowrap;
+  transition: 0.3s;
+}
+
+.view-btn:hover {
+  background-color: #e0a800;
+}
+
+/* 📱 Mobile (up to 576px) */
+@media (max-width: 576px) {
+  .hero {
+    margin-top: 0;        /* mobile no margin */
+    min-height: 400px;    /* smaller height */
+    padding: 30px 15px;   /* less padding */
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .desc {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+
+  .search-bar {
+    width: 90%; /* almost full width */
+  }
+}
+
+/* 📱 Tablet (577px – 991px) */
+@media (min-width: 577px) and (max-width: 991px) {
+  .hero {
+    margin-top: 0;       /* tablet no margin */
+    min-height: 500px;
+    padding: 40px 30px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .desc {
+    font-size: 1rem;
+  }
+
+  .search-bar {
+    width: 75%;
+  }
 }

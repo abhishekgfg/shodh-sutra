@@ -10,6 +10,8 @@ import WhyPursuie from './about/WhyPursuie';
 import Process from './pages/Process';
 import Discipline from './pages/Discipline';
 import ContactUs from './pages/ContactUs';
+import PhDConsultation from './home/PhDConsultation';
+import Guide from './pages/Guide';
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
           <Route path="/process" element={<Process />}  />
           <Route path="/discipline" element={<Discipline />}  />
           <Route path="/contact" element={<ContactUs/>} />
+            <Route path="/consultation" element={<PhDConsultation/>} />
+             <Route path="/guide" element={<Guide/>} />
       </Routes>
       <Footer />
     </Router>

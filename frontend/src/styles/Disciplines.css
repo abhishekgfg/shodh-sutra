@@ -11,7 +11,7 @@
 }
 
 .disciplines-head {
-  max-width:860px;
+ 
   margin:0 auto 24px;
   text-align:left; /* already left-aligned */
   margin-left: 0;  /* force start from left */
@@ -31,7 +31,7 @@
   margin:0;
 }
 
-.disciplines-grid {
+.disciplines-grid1 {
   margin-top:18px;
   display:grid;
   grid-template-columns: repeat(3, 1fr);
@@ -39,10 +39,12 @@
 }
 
 .disc-card {
+  width: 100%;
   padding:24px 22px;
   background:#fff;
   border-right:1.5px solid var(--line);
   border-bottom:1.5px solid var(--line);
+   box-sizing: border-box;
   transition:transform .2s ease, box-shadow .2s ease;
 }
 

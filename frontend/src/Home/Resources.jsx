@@ -11,7 +11,7 @@ const Resources = () => {
     <div className="container">
       <div className="content">
         <h1 className="title">Resources For Aspirants</h1>
-        <p className="description">
+        <p className="description2">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
         </p>
         <div className="resources">

@@ -46,7 +46,7 @@ function Disciplines() {
         </p>
       </div>
 
-      <div className="disciplines-grid">
+      <div className="disciplines-grid1">
         {items.map((it, i) => (
           <article className="disc-card" key={i}>
             <div className="disc-icon">{it.icon}</div>

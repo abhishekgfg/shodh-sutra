@@ -71,7 +71,7 @@ const Header = () => {
         {/* Apply Now Button */}
         <button
           className="apply-btn"
-          onClick={() => (window.location.href = "/consultation")}
+          onClick={() => (window.location.href = "/apply-now")}
         >
           Apply Now
         </button>

@@ -11,7 +11,7 @@ const PartnerInstitutions = () => {
     <div className="container">
       <div className="content">
         <h1 className="title">Partner Institutions</h1>
-        <p className="description">
+        <p className="description1">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
         <div className="institutions">

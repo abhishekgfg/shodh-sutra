@@ -12,6 +12,7 @@ import Discipline from './pages/Discipline';
 import ContactUs from './pages/ContactUs';
 import PhDConsultation from './Home/PhDConsultation.jsx';
 import Guide from './pages/Guide';
+import ApplyNow from './components/ApplyNow.jsx';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/contact" element={<ContactUs/>} />
             <Route path="/consultation" element={<PhDConsultation/>} />
              <Route path="/guide" element={<Guide/>} />
+             <Route path="/apply-now" element={<ApplyNow/>} />
       </Routes>
       <Footer />
     </Router>

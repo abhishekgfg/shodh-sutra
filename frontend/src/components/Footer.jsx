@@ -27,19 +27,19 @@ const Footer = () => {
         {/* Column 2 */}
         <div className="footer-column">
           <h4>Quick links</h4>
-          <a href="#">Home</a>
-          <a href="#">Disciplines</a>
+          <a href="/">Home</a>
+          <a href="/discipline">Disciplines</a>
           <a href="#">University</a>
-          <a href="#">Guides</a>
+          <a href="/guide">Guides</a>
           <a href="#">Resources Center</a>
-          <a href="#">Contact Us</a>
+          <a href="/contact">Contact Us</a>
         </div>
 
         {/* Column 3 */}
         <div className="footer-column">
           <h4>About Us</h4>
-          <a href="#">Meet IIRHE</a>
-          <a href="#">Why Pursue a PHD ?</a>
+          <a href="/about">Meet ShodSutra</a>
+          <a href="/whyprusuie">Why Pursue a PHD ?</a>
           <a href="#">For Students</a>
           <a href="#">Admissions & Mentorship Program</a>
           <a href="#">For Mentors</a>

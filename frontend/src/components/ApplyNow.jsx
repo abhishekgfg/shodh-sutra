@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/applyNow.css";   // Import CSS
+import "../styles/ApplyNow.css";   // Import CSS
 import PhDConsultation from "../Home/PhDConsultation";
 
 const ApplyNow = () => {
